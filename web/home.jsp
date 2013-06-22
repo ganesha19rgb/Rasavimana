@@ -7,10 +7,7 @@
 
 
 <%@page import="src.mySecurity"%>
-<%@page import="model.User"%>
-<%@page import="org.hibernate.Transaction"%>
-<%@page import="org.hibernate.Session"%>
-<%@page import="model.HibernateUtil"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -92,12 +89,7 @@
     </head>
 
     <body>
-           <%
-               Session hsession = HibernateUtil.getSessionFactory().openSession();
-                       Transaction tx = hsession.beginTransaction();
-                     User u=(User)hsession.load(User.class, 1);
-
-                    %>
+          
         <%@include file="include/navigation.jsp" %>
 
         <div class="container-fluid" id="content">
@@ -186,7 +178,7 @@
                         <div class="span12">
                             <ul class="tiles">
                                 <li class="orange high long">
-                                    <a href="magazine_data_entry.jsp"><span class='count'><i class="icon-book"></i> M</span><span class='name'><%= mySecurity.decrypt(u.getUname()) %></span></a>
+                                    <a href="magazine_data_entry.jsp"><span class='count'><i class="icon-book"></i> M</span><span class='name'></span></a>
                                 </li>
                                 <li class="blue">
                                     <a href="view_magazine.jsp"><span><i class="icon-sitemap"></i></span><span class='name'>Cost Breakdown</span></a>
