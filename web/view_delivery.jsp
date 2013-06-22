@@ -159,10 +159,9 @@
                                                 <th width="100" class='hidden-350'>Date</th>
                                                 <th width="100" class='hidden-480'>Magazine</th>
                                                 <th width="100" class='hidden-1024'>Qty</th>
-                                                <th width="100" class='hidden-1024'>Dis %</th>
+                                                <th width="100" class='hidden-1024'>Comm</th>
                                                 <th width="100" class='hidden-1024'>Dis Price</th>
-                                                <th width="100" class='hidden-480'>Amount</th>
-                                                <th width="100" class='hidden-480'>Balance</th>
+                                                <th width="100" class='hidden-480'>Amount</th>                                               
                                                 <th width="80" class='hidden-480 upd'>Edit</th>
                                             </tr>
                                             <tr>
@@ -171,10 +170,9 @@
                                                 <th class='hidden-350'>Date</th>
                                                 <th class='hidden-480'>Magazine</th>
                                                 <th class='hidden-1024'>Qty</th>
-                                                <th class='hidden-1024'>Dis %</th>
+                                                <th class='hidden-1024'>Comm</th>
                                                 <th class='hidden-1024'>Dis Price</th>
-                                                <th class='hidden-480'>Amount</th>
-                                                <th class='hidden-480'>Balance</th>
+                                                <th class='hidden-480'>Amount</th>                                               
                                                 <th class='hidden-480 upd'>Edit</th>
                                             </tr>
 
@@ -189,7 +187,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                               
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
 
                                             </tr>
@@ -202,7 +200,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -214,7 +212,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -226,7 +224,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr class="has-bal">
@@ -238,7 +236,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                                
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -250,7 +248,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                               
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -262,7 +260,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                               
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr class="has-bal">
@@ -274,7 +272,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -286,7 +284,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -298,7 +296,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>                                                
+                                                                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr class="has-bal">
@@ -310,7 +308,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                                
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -322,7 +320,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                               
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -334,7 +332,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                            
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
 
@@ -347,7 +345,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                           
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -359,7 +357,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                             
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr class="has-bal">
@@ -371,7 +369,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                             
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -383,7 +381,7 @@
                                                 <td class='hidden-1024'>20% </td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                         
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                             <tr>
@@ -395,7 +393,7 @@
                                                 <td class='hidden-1024'>20%</td>
                                                 <td class='hidden-1024'>1300</td>
                                                 <td class='hidden-350'>44</td>
-                                                <td class='hidden-350'>44</td>
+                                              
                                                 <td class='upd'><a href="update_delivery.jsp"><i class="icon-edit icon-2x"></i></a></td> 
                                             </tr>
                                         </tbody>
