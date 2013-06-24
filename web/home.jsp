@@ -92,7 +92,7 @@
           
         <%@include file="include/navigation.jsp" %>
 
-        <div class="container-fluid" id="content">
+        <div class="container-fluid" id="content" style="height: auto!important; min-height: 750px!important;">
 
             <div id="left">
 
