@@ -1,28 +1,29 @@
-function pall(){
+function reg_user(path){
             
     $.ajax({
                
         type: "POST",
-        url: "login",
-        data: $("#myform").serialize(),
+        url: path,
+        data: $("#reg_user").serialize(),
         beforeSend:(function(){
-            $('#update').html("<div><img src=\"loading.gif\"></div>");
+//            $('#update').html("<div><img src=\"loading.gif\"></div>");
         }),
         statusCode:{
             404: function() {
-                $("#error").html('Could not contact server.');
+//                $("#error").html('Could not contact server.');
             },
             500: function() {
-                $("#error").html('A server-side error has occurred.');
+//                $("#error").html('A server-side error has occurred.');
             }
             
         }
     }).done(function( msg ) {
-        if(msg=='java.lang.Exception'){
-            $("#error").html(msg+"<br>");
+        if(msg=='Error')   {
+            alert(msg);
         }else{
-            $("#update").html(msg+"<br>");
-        }          
+            alert(msg);
+        }
+        
     });
 }
 

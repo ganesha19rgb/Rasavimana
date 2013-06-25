@@ -85,6 +85,8 @@
         <script src="js/plugins/datepicker/bootstrap-datepicker.js"></script>
         <!-- Masked inputs -->
         <script src="js/plugins/maskedinput/jquery.maskedinput.min.js"></script>
+        <!--My Functions-->
+        <script src="js/MyFunctions.js"></script>
 
 
         <script src="js/custom.js"></script>
@@ -191,7 +193,7 @@
 
                                         </div>
                                         <div class="tab-pane"  id="notifications">
-                                            <form action="#" method="POST" class='form-horizontal form-validate' id="bb">
+                                            <form class='form-horizontal form-validate' id="reg_user">
 
                                                 <div class="control-group">
                                                     <label for="textfield" class="control-label">Full Name</label>
@@ -208,7 +210,7 @@
                                                 <div class="control-group">
                                                     <label for="textfield" class="control-label">User Type</label>
                                                     <div class="controls">
-                                                        <select style="width: 283px;">
+                                                        <select style="width: 283px;" name="usertype">
                                                             <option>Admin</option>
                                                             <option>VAT Admin</option>
                                                             <option>User</option>
@@ -225,12 +227,12 @@
                                                 <div class="control-group">
                                                     <label for="confirmfield" class="control-label">Confirm password</label>
                                                     <div class="controls">
-                                                        <input type="text" name="confirmfield" id="confirmfield" class="input-xlarge" data-rule-equalTo="#pwfield" data-rule-required="true">
+                                                        <input type="password" name="confirmfield" id="confirmfield" class="input-xlarge" data-rule-equalTo="#pwfield" data-rule-required="true">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-actions">
-                                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                                    <input type="button" onclick="reg_user('reg_user')" class="btn btn-primary" value="Submit">
                                                     <button type="button" class="btn">Cancel</button>
                                                 </div>
                                             </form>
