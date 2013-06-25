@@ -4,6 +4,11 @@
     Author     : Ishan Dinisha <ishan@azbow.com>
 --%>
 
+<%@page import="org.hibernate.Session"%>
+<%@page import="mapping.NewHibernateUtil"%>
+<%@page import="java.util.List"%>
+<%@page import="mapping.User"%>
+<%@page import="org.hibernate.Criteria"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.util.TimeZone"%>
 <%@page import="java.text.SimpleDateFormat"%>
@@ -107,7 +112,7 @@
     </head>
 
     <body>
-
+        <%Session hsession = NewHibernateUtil.getSessionFactory().openSession();%>
         <%@include file="include/navigation.jsp" %>
         <div class="container-fluid" id="content">
             <%@include file="include/left_panel.jsp" %>
@@ -248,17 +253,17 @@
 
                                                 </thead>
                                                 <tbody>
+                                                    <%
+                                                        Criteria c = hsession.createCriteria(User.class);
+                                                        List<User> list = c.list();
+                                                        for (User u1 : list) {
+                                                    %>
                                                     <tr>
-                                                        <td>Kamal Perera</td>
-                                                        <td>kama123</td>
-                                                        <td>Admin</td>
+                                                        <td><%= u1.getFname() %></td>
+                                                        <td><%= u1.getUname() %></td>
+                                                        <td><%= u1.getUserType() %></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Nihal Padmasiri</td>
-                                                        <td>npad</td> 
-                                                        <td>User</td>
-                                                    </tr>
-
+                                                    <%}%>
                                                 </tbody>
                                             </table>                                            
                                         </div>
