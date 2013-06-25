@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2013 12:49:01 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="mapping.Magazine" table="magazine" catalog="sanjjaya_rasavimana">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="magId" type="string">
+            <column name="magID" length="10" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="20" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="65535" />
+        </property>
+        <property name="qty" type="string">
+            <column name="qty" length="65535" />
+        </property>
+        <property name="totalCost" type="string">
+            <column name="totalCost" length="65535" />
+        </property>
+        <property name="perMagCost" type="string">
+            <column name="perMagCost" length="65535" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" length="65535" />
+        </property>
+        <set name="stockdelis" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Stockdeli" />
+        </set>
+        <set name="delivers" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Deliver" />
+        </set>
+        <set name="agenthases" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Agenthas" />
+        </set>
+        <set name="personals" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Personal" />
+        </set>
+        <set name="rtns" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Rtn" />
+        </set>
+        <set name="magexpences" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Magexpence" />
+        </set>
+        <set name="stocks" inverse="true">
+            <key>
+                <column name="magazine_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Stock" />
+        </set>
+    </class>
+</hibernate-mapping>

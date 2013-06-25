@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2013 12:49:01 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="mapping.District" table="district" catalog="sanjjaya_rasavimana">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="disName" type="string">
+            <column name="disName" length="45" />
+        </property>
+        <property name="disCode" type="string">
+            <column name="disCode" length="45" />
+        </property>
+        <set name="agents" inverse="true">
+            <key>
+                <column name="district_id" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Agent" />
+        </set>
+    </class>
+</hibernate-mapping>

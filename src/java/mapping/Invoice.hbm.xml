@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2013 12:49:01 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="mapping.Invoice" table="invoice" catalog="sanjjaya_rasavimana">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="check" class="mapping.Check" fetch="select">
+            <column name="check_id" />
+        </many-to-one>
+        <many-to-one name="account" class="mapping.Account" fetch="select">
+            <column name="account_id" />
+        </many-to-one>
+        <property name="invoId" type="string">
+            <column name="invoID" length="10" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="65535" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="10" />
+        </property>
+        <set name="personals" inverse="true">
+            <key>
+                <column name="invoice_id" />
+            </key>
+            <one-to-many class="mapping.Personal" />
+        </set>
+    </class>
+</hibernate-mapping>
