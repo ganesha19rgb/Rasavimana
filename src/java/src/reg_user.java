@@ -60,7 +60,7 @@ public class reg_user extends HttpServlet {
                     out.write("Password Fields mismatch");
                 }
             }else{
-                out.write("Fill all the Textfields Please");
+                out.write("Fill all the Textfields ");
             }
         } catch (Exception e) {
             out.write("Error");
