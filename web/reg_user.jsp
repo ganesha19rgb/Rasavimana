@@ -4,8 +4,8 @@
     Author     : Ishan Dinisha <ishan@azbow.com>
 --%>
 
-<%@page import="org.hibernate.Session"%>
 <%@page import="mapping.NewHibernateUtil"%>
+<%@page import="org.hibernate.Session"%>
 <%@page import="java.util.List"%>
 <%@page import="mapping.User"%>
 <%@page import="org.hibernate.Criteria"%>
@@ -108,11 +108,12 @@
         <link rel="shortcut icon" href="img/favicon.ico" />
         <!-- Apple devices Homescreen icon -->
         <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+       
 
     </head>
 
     <body>
-        <%Session hsession = NewHibernateUtil.getSessionFactory().openSession();%>
+        <% Session hsession = NewHibernateUtil.getSessionFactory().openSession();%>
         <%@include file="include/navigation.jsp" %>
         <div class="container-fluid" id="content">
             <%@include file="include/left_panel.jsp" %>

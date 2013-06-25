@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -19,18 +19,18 @@ public class Magazine  implements java.io.Serializable {
      private String totalCost;
      private String perMagCost;
      private String remarks;
-     private Set stockdelis = new HashSet(0);
-     private Set delivers = new HashSet(0);
-     private Set agenthases = new HashSet(0);
-     private Set personals = new HashSet(0);
-     private Set rtns = new HashSet(0);
-     private Set magexpences = new HashSet(0);
-     private Set stocks = new HashSet(0);
+     private Set<Stockdeli> stockdelis = new HashSet<Stockdeli>(0);
+     private Set<Deliver> delivers = new HashSet<Deliver>(0);
+     private Set<Agenthas> agenthases = new HashSet<Agenthas>(0);
+     private Set<Personal> personals = new HashSet<Personal>(0);
+     private Set<Rtn> rtns = new HashSet<Rtn>(0);
+     private Set<Magexpence> magexpences = new HashSet<Magexpence>(0);
+     private Set<Stock> stocks = new HashSet<Stock>(0);
 
     public Magazine() {
     }
 
-    public Magazine(String magId, String date, String price, String qty, String totalCost, String perMagCost, String remarks, Set stockdelis, Set delivers, Set agenthases, Set personals, Set rtns, Set magexpences, Set stocks) {
+    public Magazine(String magId, String date, String price, String qty, String totalCost, String perMagCost, String remarks, Set<Stockdeli> stockdelis, Set<Deliver> delivers, Set<Agenthas> agenthases, Set<Personal> personals, Set<Rtn> rtns, Set<Magexpence> magexpences, Set<Stock> stocks) {
        this.magId = magId;
        this.date = date;
        this.price = price;
@@ -103,53 +103,53 @@ public class Magazine  implements java.io.Serializable {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
-    public Set getStockdelis() {
+    public Set<Stockdeli> getStockdelis() {
         return this.stockdelis;
     }
     
-    public void setStockdelis(Set stockdelis) {
+    public void setStockdelis(Set<Stockdeli> stockdelis) {
         this.stockdelis = stockdelis;
     }
-    public Set getDelivers() {
+    public Set<Deliver> getDelivers() {
         return this.delivers;
     }
     
-    public void setDelivers(Set delivers) {
+    public void setDelivers(Set<Deliver> delivers) {
         this.delivers = delivers;
     }
-    public Set getAgenthases() {
+    public Set<Agenthas> getAgenthases() {
         return this.agenthases;
     }
     
-    public void setAgenthases(Set agenthases) {
+    public void setAgenthases(Set<Agenthas> agenthases) {
         this.agenthases = agenthases;
     }
-    public Set getPersonals() {
+    public Set<Personal> getPersonals() {
         return this.personals;
     }
     
-    public void setPersonals(Set personals) {
+    public void setPersonals(Set<Personal> personals) {
         this.personals = personals;
     }
-    public Set getRtns() {
+    public Set<Rtn> getRtns() {
         return this.rtns;
     }
     
-    public void setRtns(Set rtns) {
+    public void setRtns(Set<Rtn> rtns) {
         this.rtns = rtns;
     }
-    public Set getMagexpences() {
+    public Set<Magexpence> getMagexpences() {
         return this.magexpences;
     }
     
-    public void setMagexpences(Set magexpences) {
+    public void setMagexpences(Set<Magexpence> magexpences) {
         this.magexpences = magexpences;
     }
-    public Set getStocks() {
+    public Set<Stock> getStocks() {
         return this.stocks;
     }
     
-    public void setStocks(Set stocks) {
+    public void setStocks(Set<Stock> stocks) {
         this.stocks = stocks;
     }
 

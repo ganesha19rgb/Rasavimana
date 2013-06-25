@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -16,12 +16,12 @@ public class User  implements java.io.Serializable {
      private String uname;
      private String userType;
      private String password;
-     private Set userlogs = new HashSet(0);
+     private Set<Userlog> userlogs = new HashSet<Userlog>(0);
 
     public User() {
     }
 
-    public User(String fname, String uname, String userType, String password, Set userlogs) {
+    public User(String fname, String uname, String userType, String password, Set<Userlog> userlogs) {
        this.fname = fname;
        this.uname = uname;
        this.userType = userType;
@@ -64,11 +64,11 @@ public class User  implements java.io.Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    public Set getUserlogs() {
+    public Set<Userlog> getUserlogs() {
         return this.userlogs;
     }
     
-    public void setUserlogs(Set userlogs) {
+    public void setUserlogs(Set<Userlog> userlogs) {
         this.userlogs = userlogs;
     }
 

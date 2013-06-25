@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.Date;
@@ -25,11 +25,11 @@ public class Agent  implements java.io.Serializable {
      private String vat;
      private String gagtId;
      private String remarks;
-     private Set delivers = new HashSet(0);
-     private Set rtns = new HashSet(0);
-     private Set accounts = new HashSet(0);
-     private Set personals = new HashSet(0);
-     private Set agenthases = new HashSet(0);
+     private Set<Deliver> delivers = new HashSet<Deliver>(0);
+     private Set<Rtn> rtns = new HashSet<Rtn>(0);
+     private Set<Account> accounts = new HashSet<Account>(0);
+     private Set<Personal> personals = new HashSet<Personal>(0);
+     private Set<Agenthas> agenthases = new HashSet<Agenthas>(0);
 
     public Agent() {
     }
@@ -40,7 +40,7 @@ public class Agent  implements java.io.Serializable {
         this.distributors = distributors;
         this.district = district;
     }
-    public Agent(Route route, Distributors distributors, District district, String agtId, String agtName, Date date, String address, String phone, String comMargin, String vat, String gagtId, String remarks, Set delivers, Set rtns, Set accounts, Set personals, Set agenthases) {
+    public Agent(Route route, Distributors distributors, District district, String agtId, String agtName, Date date, String address, String phone, String comMargin, String vat, String gagtId, String remarks, Set<Deliver> delivers, Set<Rtn> rtns, Set<Account> accounts, Set<Personal> personals, Set<Agenthas> agenthases) {
        this.route = route;
        this.distributors = distributors;
        this.district = district;
@@ -151,39 +151,39 @@ public class Agent  implements java.io.Serializable {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
-    public Set getDelivers() {
+    public Set<Deliver> getDelivers() {
         return this.delivers;
     }
     
-    public void setDelivers(Set delivers) {
+    public void setDelivers(Set<Deliver> delivers) {
         this.delivers = delivers;
     }
-    public Set getRtns() {
+    public Set<Rtn> getRtns() {
         return this.rtns;
     }
     
-    public void setRtns(Set rtns) {
+    public void setRtns(Set<Rtn> rtns) {
         this.rtns = rtns;
     }
-    public Set getAccounts() {
+    public Set<Account> getAccounts() {
         return this.accounts;
     }
     
-    public void setAccounts(Set accounts) {
+    public void setAccounts(Set<Account> accounts) {
         this.accounts = accounts;
     }
-    public Set getPersonals() {
+    public Set<Personal> getPersonals() {
         return this.personals;
     }
     
-    public void setPersonals(Set personals) {
+    public void setPersonals(Set<Personal> personals) {
         this.personals = personals;
     }
-    public Set getAgenthases() {
+    public Set<Agenthas> getAgenthases() {
         return this.agenthases;
     }
     
-    public void setAgenthases(Set agenthases) {
+    public void setAgenthases(Set<Agenthas> agenthases) {
         this.agenthases = agenthases;
     }
 

@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.Date;
@@ -21,8 +21,8 @@ public class Deliver  implements java.io.Serializable {
      private String qty;
      private String rate;
      private String value;
-     private Set personals = new HashSet(0);
-     private Set stockdelis = new HashSet(0);
+     private Set<Personal> personals = new HashSet<Personal>(0);
+     private Set<Stockdeli> stockdelis = new HashSet<Stockdeli>(0);
 
     public Deliver() {
     }
@@ -33,7 +33,7 @@ public class Deliver  implements java.io.Serializable {
         this.magazine = magazine;
         this.agent = agent;
     }
-    public Deliver(Route route, Magazine magazine, Agent agent, String deliId, Date date, String qty, String rate, String value, Set personals, Set stockdelis) {
+    public Deliver(Route route, Magazine magazine, Agent agent, String deliId, Date date, String qty, String rate, String value, Set<Personal> personals, Set<Stockdeli> stockdelis) {
        this.route = route;
        this.magazine = magazine;
        this.agent = agent;
@@ -109,18 +109,18 @@ public class Deliver  implements java.io.Serializable {
     public void setValue(String value) {
         this.value = value;
     }
-    public Set getPersonals() {
+    public Set<Personal> getPersonals() {
         return this.personals;
     }
     
-    public void setPersonals(Set personals) {
+    public void setPersonals(Set<Personal> personals) {
         this.personals = personals;
     }
-    public Set getStockdelis() {
+    public Set<Stockdeli> getStockdelis() {
         return this.stockdelis;
     }
     
-    public void setStockdelis(Set stockdelis) {
+    public void setStockdelis(Set<Stockdeli> stockdelis) {
         this.stockdelis = stockdelis;
     }
 

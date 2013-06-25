@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -16,12 +16,12 @@ public class Check  implements java.io.Serializable {
      private String bank;
      private String branch;
      private String amount;
-     private Set invoices = new HashSet(0);
+     private Set<Invoice> invoices = new HashSet<Invoice>(0);
 
     public Check() {
     }
 
-    public Check(String num, String bank, String branch, String amount, Set invoices) {
+    public Check(String num, String bank, String branch, String amount, Set<Invoice> invoices) {
        this.num = num;
        this.bank = bank;
        this.branch = branch;
@@ -64,11 +64,11 @@ public class Check  implements java.io.Serializable {
     public void setAmount(String amount) {
         this.amount = amount;
     }
-    public Set getInvoices() {
+    public Set<Invoice> getInvoices() {
         return this.invoices;
     }
     
-    public void setInvoices(Set invoices) {
+    public void setInvoices(Set<Invoice> invoices) {
         this.invoices = invoices;
     }
 

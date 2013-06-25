@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -14,17 +14,17 @@ public class Route  implements java.io.Serializable {
      private Integer id;
      private String name;
      private String code;
-     private Set invbooks = new HashSet(0);
-     private Set delibooks = new HashSet(0);
-     private Set rtns = new HashSet(0);
-     private Set delivers = new HashSet(0);
-     private Set agents = new HashSet(0);
-     private Set rtnbooks = new HashSet(0);
+     private Set<Invbook> invbooks = new HashSet<Invbook>(0);
+     private Set<Delibook> delibooks = new HashSet<Delibook>(0);
+     private Set<Rtn> rtns = new HashSet<Rtn>(0);
+     private Set<Deliver> delivers = new HashSet<Deliver>(0);
+     private Set<Agent> agents = new HashSet<Agent>(0);
+     private Set<Rtnbook> rtnbooks = new HashSet<Rtnbook>(0);
 
     public Route() {
     }
 
-    public Route(String name, String code, Set invbooks, Set delibooks, Set rtns, Set delivers, Set agents, Set rtnbooks) {
+    public Route(String name, String code, Set<Invbook> invbooks, Set<Delibook> delibooks, Set<Rtn> rtns, Set<Deliver> delivers, Set<Agent> agents, Set<Rtnbook> rtnbooks) {
        this.name = name;
        this.code = code;
        this.invbooks = invbooks;
@@ -56,46 +56,46 @@ public class Route  implements java.io.Serializable {
     public void setCode(String code) {
         this.code = code;
     }
-    public Set getInvbooks() {
+    public Set<Invbook> getInvbooks() {
         return this.invbooks;
     }
     
-    public void setInvbooks(Set invbooks) {
+    public void setInvbooks(Set<Invbook> invbooks) {
         this.invbooks = invbooks;
     }
-    public Set getDelibooks() {
+    public Set<Delibook> getDelibooks() {
         return this.delibooks;
     }
     
-    public void setDelibooks(Set delibooks) {
+    public void setDelibooks(Set<Delibook> delibooks) {
         this.delibooks = delibooks;
     }
-    public Set getRtns() {
+    public Set<Rtn> getRtns() {
         return this.rtns;
     }
     
-    public void setRtns(Set rtns) {
+    public void setRtns(Set<Rtn> rtns) {
         this.rtns = rtns;
     }
-    public Set getDelivers() {
+    public Set<Deliver> getDelivers() {
         return this.delivers;
     }
     
-    public void setDelivers(Set delivers) {
+    public void setDelivers(Set<Deliver> delivers) {
         this.delivers = delivers;
     }
-    public Set getAgents() {
+    public Set<Agent> getAgents() {
         return this.agents;
     }
     
-    public void setAgents(Set agents) {
+    public void setAgents(Set<Agent> agents) {
         this.agents = agents;
     }
-    public Set getRtnbooks() {
+    public Set<Rtnbook> getRtnbooks() {
         return this.rtnbooks;
     }
     
-    public void setRtnbooks(Set rtnbooks) {
+    public void setRtnbooks(Set<Rtnbook> rtnbooks) {
         this.rtnbooks = rtnbooks;
     }
 

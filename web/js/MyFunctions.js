@@ -7,6 +7,7 @@ function reg_user(path){
         data: $("#reg_user").serialize(),
         beforeSend:(function(){
 //            $('#update').html("<div><img src=\"loading.gif\"></div>");
+            alert(path);
         }),
         statusCode:{
             404: function() {
@@ -18,11 +19,11 @@ function reg_user(path){
             
         }
     }).done(function( msg ) {
-        if(msg=='Error')   {
+//        if(msg=='Error')   {
+//            alert(msg);
+//        }else{
             alert(msg);
-        }else{
-            alert(msg);
-        }
+//        }
         
     });
 }

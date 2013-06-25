@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -14,7 +14,7 @@ public class Account  implements java.io.Serializable {
      private Integer id;
      private Agent agent;
      private String balance;
-     private Set invoices = new HashSet(0);
+     private Set<Invoice> invoices = new HashSet<Invoice>(0);
 
     public Account() {
     }
@@ -23,7 +23,7 @@ public class Account  implements java.io.Serializable {
     public Account(Agent agent) {
         this.agent = agent;
     }
-    public Account(Agent agent, String balance, Set invoices) {
+    public Account(Agent agent, String balance, Set<Invoice> invoices) {
        this.agent = agent;
        this.balance = balance;
        this.invoices = invoices;
@@ -50,11 +50,11 @@ public class Account  implements java.io.Serializable {
     public void setBalance(String balance) {
         this.balance = balance;
     }
-    public Set getInvoices() {
+    public Set<Invoice> getInvoices() {
         return this.invoices;
     }
     
-    public void setInvoices(Set invoices) {
+    public void setInvoices(Set<Invoice> invoices) {
         this.invoices = invoices;
     }
 

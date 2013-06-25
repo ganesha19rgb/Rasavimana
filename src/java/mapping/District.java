@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -14,12 +14,12 @@ public class District  implements java.io.Serializable {
      private Integer id;
      private String disName;
      private String disCode;
-     private Set agents = new HashSet(0);
+     private Set<Agent> agents = new HashSet<Agent>(0);
 
     public District() {
     }
 
-    public District(String disName, String disCode, Set agents) {
+    public District(String disName, String disCode, Set<Agent> agents) {
        this.disName = disName;
        this.disCode = disCode;
        this.agents = agents;
@@ -46,11 +46,11 @@ public class District  implements java.io.Serializable {
     public void setDisCode(String disCode) {
         this.disCode = disCode;
     }
-    public Set getAgents() {
+    public Set<Agent> getAgents() {
         return this.agents;
     }
     
-    public void setAgents(Set agents) {
+    public void setAgents(Set<Agent> agents) {
         this.agents = agents;
     }
 

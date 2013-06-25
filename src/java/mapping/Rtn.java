@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.Date;
@@ -21,7 +21,7 @@ public class Rtn  implements java.io.Serializable {
      private String qty;
      private String rate;
      private String value;
-     private Set personals = new HashSet(0);
+     private Set<Personal> personals = new HashSet<Personal>(0);
 
     public Rtn() {
     }
@@ -32,7 +32,7 @@ public class Rtn  implements java.io.Serializable {
         this.magazine = magazine;
         this.agent = agent;
     }
-    public Rtn(Route route, Magazine magazine, Agent agent, String rtnId, Date date, String qty, String rate, String value, Set personals) {
+    public Rtn(Route route, Magazine magazine, Agent agent, String rtnId, Date date, String qty, String rate, String value, Set<Personal> personals) {
        this.route = route;
        this.magazine = magazine;
        this.agent = agent;
@@ -107,11 +107,11 @@ public class Rtn  implements java.io.Serializable {
     public void setValue(String value) {
         this.value = value;
     }
-    public Set getPersonals() {
+    public Set<Personal> getPersonals() {
         return this.personals;
     }
     
-    public void setPersonals(Set personals) {
+    public void setPersonals(Set<Personal> personals) {
         this.personals = personals;
     }
 

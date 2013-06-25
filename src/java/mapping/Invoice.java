@@ -1,5 +1,5 @@
 package mapping;
-// Generated 25-Jun-2013 12:48:59 by Hibernate Tools 3.2.1.GA
+// Generated 25-Jun-2013 13:27:56 by Hibernate Tools 3.2.1.GA
 
 
 import java.util.Date;
@@ -19,12 +19,12 @@ public class Invoice  implements java.io.Serializable {
      private Date date;
      private String price;
      private String type;
-     private Set personals = new HashSet(0);
+     private Set<Personal> personals = new HashSet<Personal>(0);
 
     public Invoice() {
     }
 
-    public Invoice(Check check, Account account, String invoId, Date date, String price, String type, Set personals) {
+    public Invoice(Check check, Account account, String invoId, Date date, String price, String type, Set<Personal> personals) {
        this.check = check;
        this.account = account;
        this.invoId = invoId;
@@ -83,11 +83,11 @@ public class Invoice  implements java.io.Serializable {
     public void setType(String type) {
         this.type = type;
     }
-    public Set getPersonals() {
+    public Set<Personal> getPersonals() {
         return this.personals;
     }
     
-    public void setPersonals(Set personals) {
+    public void setPersonals(Set<Personal> personals) {
         this.personals = personals;
     }
 

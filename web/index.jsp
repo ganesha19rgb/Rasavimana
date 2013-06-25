@@ -57,6 +57,7 @@
         <link rel="shortcut icon" href="img/favicon.ico" />
         <!-- Apple devices Homescreen icon -->
         <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+        <script src="js/jquery.min.js"></script>
         <style>
             .control-group.error .help-block{
                 color: #b94a48;
@@ -75,7 +76,7 @@
             <h1><a href="#a"><img src="img/logo-big.png" alt="" class='retina-ready' width="59" height="49">Rasavimana</a></h1>
             <div class="login-body">
                 <h2>SIGN IN</h2>
-                <form action="home.jsp" method="POST" class='form-validate' >
+                <form id="signin" class='form-validate' >
                     <div class="control-group">
                         <div class="email controls">
                             <input type="text" name='uname' placeholder="User Name" class='input-block-level' data-rule-required="true" >
@@ -88,9 +89,9 @@
                             <span for="pw" class="help-block error" style="">This field is required.</span>
                         </div>
                     </div>
-                   
+
                     <div class="submit">					
-                 <input type="button" value="Sign me in" onclick="validate();" class='btn btn-primary'>
+                        <input type="button" value="Sign me in" onclick="validate('login');" class='btn btn-primary'>
                     </div>
                 </form>
                 <div class="forget">
@@ -115,9 +116,9 @@
         </script>
 
         <script>
-            function validate(){
+            function validate(path){
                 var email= $('.email input').val();
-                 var pw= $('.pw input').val();
+                var pw= $('.pw input').val();
               
                 if(email==""){
                     $('.form-validate .control-group:first').addClass('error');
@@ -125,7 +126,7 @@
                         display:'block' 
                     });
                 }else{
-                     $('.form-validate .control-group:first').removeClass('error');
+                    $('.form-validate .control-group:first').removeClass('error');
                     $('.email .error').css({
                         display:'none' 
                     }); 
@@ -137,15 +138,35 @@
                         display:'block' 
                     });
                 }else{
-                     $('.form-validate .control-group:last').removeClass('error');
+                    $('.form-validate .control-group:last').removeClass('error');
                     $('.pw .error').css({
                         display:'none' 
                     }); 
                 }
-                
-               if((email!="")&&(pw!="")){
-                  window.location="home.jsp";
-               }
+                if((email!="")&&(pw!="")){
+                    //window.location="home.jsp";
+                    $.ajax({
+               
+                        type: "POST",
+                        url: path,
+                        data: $("#signin").serialize(),
+                        beforeSend:(function(){
+                            //            $('#update').html("<div><img src=\"loading.gif\"></div>");
+                        }),
+                        statusCode:{
+                            404: function() {
+                                //                $("#error").html('Could not contact server.');
+                            },
+                            500: function() {
+                                //                $("#error").html('A server-side error has occurred.');
+                            }
+            
+                        }
+                    }).done(function( msg ) {
+                        alert(msg);
+        
+                    });
+                }
                
             }
         </script>

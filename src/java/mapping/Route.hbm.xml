@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 25-Jun-2013 12:49:01 by Hibernate Tools 3.2.1.GA -->
+<!-- Generated 25-Jun-2013 13:27:57 by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
     <class name="mapping.Route" table="route" catalog="sanjjaya_rasavimana">
         <id name="id" type="java.lang.Integer">
