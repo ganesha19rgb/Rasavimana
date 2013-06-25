@@ -199,6 +199,12 @@
                                         </div>
                                         <div class="tab-pane"  id="notifications">
                                             <form class='form-horizontal form-validate' id="reg_user">
+                                                <div class="alert alert-success">
+                                                    <button type="button" class="close" data-dismiss="alert">x</button>
+                                                    <strong>Successful !  </strong>
+                                                    Record saved successfully.
+
+                                                </div>
 
                                                 <div class="control-group">
                                                     <label for="textfield" class="control-label">Full Name</label>
@@ -259,9 +265,9 @@
                                                         for (User u1 : list) {
                                                     %>
                                                     <tr>
-                                                        <td><%= u1.getFname() %></td>
-                                                        <td><%= u1.getUname() %></td>
-                                                        <td><%= u1.getUserType() %></td>
+                                                        <td><%= u1.getFname()%></td>
+                                                        <td><%= u1.getUname()%></td>
+                                                        <td><%= u1.getUserType()%></td>
                                                     </tr>
                                                     <%}%>
                                                 </tbody>
