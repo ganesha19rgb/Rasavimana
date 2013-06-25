@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="sanjjaya_rasavimana"/>
+  <table-filter match-name="distributors"/>
+  <table-filter match-name="check"/>
+  <table-filter match-name="stock"/>
+  <table-filter match-name="stockdeli"/>
+  <table-filter match-name="magexpence"/>
+  <table-filter match-name="agent"/>
+  <table-filter match-name="invbook"/>
+  <table-filter match-name="supplier"/>
+  <table-filter match-name="district"/>
+  <table-filter match-name="delibook"/>
+  <table-filter match-name="route"/>
+  <table-filter match-name="agenthas"/>
+  <table-filter match-name="userlog"/>
+  <table-filter match-name="rtnbook"/>
+  <table-filter match-name="user"/>
+  <table-filter match-name="deliver"/>
+  <table-filter match-name="invoice"/>
+  <table-filter match-name="account"/>
+  <table-filter match-name="magazine"/>
+  <table-filter match-name="rtn"/>
+  <table-filter match-name="personal"/>
+</hibernate-reverse-engineering>

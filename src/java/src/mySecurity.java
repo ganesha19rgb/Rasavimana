@@ -20,7 +20,7 @@ import sun.misc.BASE64Encoder;
 
 public class mySecurity {
 
-    private static final char[] PASSWORD = "azbowlab".toCharArray();
+    private static final char[] PASSWORD = "azbowlabishan".toCharArray();
     private static final byte[] SALT = {
         (byte) 0xde, (byte) 0x33, (byte) 0x10, (byte) 0x12,
         (byte) 0xde, (byte) 0x33, (byte) 0x10, (byte) 0x12,};
